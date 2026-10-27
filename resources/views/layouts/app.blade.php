@@ -39,10 +39,11 @@
                 <span class="text-sm">Dashboard</span>
             </a>
 
-            <a href="/tugas" class="flex items-center gap-3 px-3 py-3 rounded-xl bg-white text-[#064B87] font-semibold shadow-sm transition">
+            
+            <a href="/tugas" class="flex items-center gap-3 px-3 py-3 rounded-xl text-blue-100 hover:bg-white/10 hover:text-white transition">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 5h6M9 9h6M9 13h6M5 5h.01M5 9h.01M5 13h.01"/>
-                </svg>
+                     <path stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 5h6M9 9h6M9 13h6M5 5h.01M5 9h.01M5 13h.01"/>
+                 </svg>
                 <span class="text-sm">Manajemen Tugas</span>
             </a>
 
