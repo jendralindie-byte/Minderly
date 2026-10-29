@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TugasController;
 use App\Http\Controllers\DashboardController;
@@ -59,6 +60,12 @@ Route::middleware('auth')->group(function () {
     // Dashboard
     Route::get('/dashboard', [DashboardController::class, 'index'])
         ->name('dashboard');
+    
+    // Pengaturan Akun
+    Route::middleware(['auth'])->group(function () {
+        Route::get('/pengaturan', [ProfileController::class, 'edit'])->name('profile.edit');
+        Route::put('/pengaturan', [ProfileController::class, 'update'])->name('profile.update');
+    });
 
     // Manajemen tugas
     Route::prefix('tugas')->name('tugas.')->group(function () {
